@@ -142,19 +142,15 @@ nav {
         url("https://images.unsplash.com/photo-1531816458010-fb7686e1f1c1?auto=format&fit=crop&w=1500&q=85");
 
     background-size: cover;
-    background-position: 35% center;
+    background-position: center;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 520px;
-  min-width: 0;
-  padding-left: 4%;
-  padding-right: 20px;
-  overflow: hidden;
-  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 8vw;
 }
 
 .hero h1 {
@@ -283,7 +279,7 @@ nav {
 
 .croton {
     background-image:
-        url("https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?auto=format&fit=crop&w=900&q=85");
+        url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=900&q=85");
 }
 
 .place-info {
@@ -511,11 +507,13 @@ input[type="range"] {
 }
 
 .school-photo {
-    .school-image {
-  background-image: url("https://images.unsplash.com/photo-1655818919137-0c9e9f8b7f5d?auto=format&fit=crop&w=1400&q=85");
-  background-size: cover;
-  background-position: center;
-  min-height: 600px;
+    min-height: 700px;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1300&q=85");
+
+    background-size: cover;
+    background-position: center;
 }
 
 .school-content {
@@ -803,72 +801,4 @@ footer small {
     .footer-title {
         font-size: 50px;
     }
-
-/* =========================
-   HERO — CENTERED COVER
-   ========================= */
-
-.hero {
-  position: relative;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  isolation: isolate;
 }
-
-.hero-photo {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-
-  background-size: cover;
-  background-position: center center;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.25);
-  z-index: -1;
-}
-
-.hero-content {
-  width: 100%;
-  max-width: 850px;
-  min-width: 0;
-  margin: 0 auto;
-  padding: 40px 24px;
-  box-sizing: border-box;
-
-  text-align: center;
-}
-
-.hero-content h1 {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-content p {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (max-width: 700px) {
-  .hero {
-    min-height: 85vh;
-  }
-
-  .hero-content {
-    padding: 30px 20px;
-  }
-
-  .hero-photo {
-    background-position: center center;
-  }
