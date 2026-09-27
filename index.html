@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pythagoras — The World in Numbers</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a class="logo" href="#home">PYTHAGORAS</a>
+
+    <div class="nav-links">
+        <a href="#story">Story</a>
+        <a href="#theorem">Theorem</a>
+        <a href="#music">Music</a>
+        <a href="#challenge">Challenge</a>
+    </div>
+
+    <a class="explore" href="#challenge">EXPLORE</a>
+</nav>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-photo"></div>
+
+    <div class="hero-content">
+
+        <p class="eyebrow">MATHEMATICS · MUSIC · PHILOSOPHY</p>
+
+        <h1>Pythagoras</h1>
+
+        <p class="quote">
+            “The world is made of numbers.”
+        </p>
+
+        <p class="intro-text">
+            Enter the world of Pythagoras — where geometry,
+            music, philosophy and the universe meet.
+        </p>
+
+        <a class="button" href="#story">
+            Discover his world ↓
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="intro">
+
+    <span class="number">01</span>
+
+    <div>
+        <p class="eyebrow">THE MAN BEHIND THE NUMBERS</p>
+
+        <h2>
+            More than<br>
+            <i>a theorem.</i>
+        </h2>
+    </div>
+
+    <div class="intro-copy">
+        <p>
+            Pythagoras is usually remembered for one famous
+            equation. But his ideas went far beyond triangles.
+        </p>
+
+        <p>
+            Mathematics, music, astronomy and philosophy were
+            all connected in his vision of the universe.
+        </p>
+    </div>
+
+</section>
+
+
+<section class="journey" id="story">
+
+    <div class="section-title">
+
+        <p class="eyebrow">THE JOURNEY</p>
+
+        <h2>Follow the numbers.</h2>
+
+        <p>
+            From the Mediterranean to Southern Italy, Pythagoras
+            became associated with a community built around
+            mathematics, philosophy and harmony.
+        </p>
+
+    </div>
+
+
+    <div class="places">
+
+        <article class="place">
+            <div class="place-image samos"></div>
+
+            <div class="place-info">
+                <span>01</span>
+                <h3>Samos</h3>
+                <p>
+                    The Aegean island traditionally associated
+                    with Pythagoras's birth.
+                </p>
+            </div>
+        </article>
+
+
+        <article class="place">
+            <div class="place-image egypt"></div>
+
+            <div class="place-info">
+                <span>02</span>
+                <h3>Egypt</h3>
+                <p>
+                    Ancient sources associate Pythagoras with
+                    travel and learning abroad.
+                </p>
+            </div>
+        </article>
+
+
+        <article class="place">
+            <div class="place-image babylon"></div>
+
+            <div class="place-info">
+                <span>03</span>
+                <h3>Babylon</h3>
+                <p>
+                    Later traditions connect him with mathematical
+                    knowledge from the ancient Near East.
+                </p>
+            </div>
+        </article>
+
+
+        <article class="place">
+            <div class="place-image croton"></div>
+
+            <div class="place-info">
+                <span>04</span>
+                <h3>Croton</h3>
+                <p>
+                    In Southern Italy, he became associated with
+                    a philosophical and mathematical community.
+                </p>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="theorem" id="theorem">
+
+    <div class="theorem-intro">
+
+        <p class="eyebrow">THE FAMOUS ONE</p>
+
+        <h2>
+            Meet the<br>
+            <i>right triangle.</i>
+        </h2>
+
+        <p>
+            Change the two sides and watch the hypotenuse change.
+            Mathematics becomes something you can play with.
+        </p>
+
+    </div>
+
+
+    <div class="calculator">
+
+        <div class="triangle">
+
+            <svg viewBox="0 0 400 300">
+
+                <polygon
+                    points="55,245 55,65 320,245"
+                    class="triangle-shape">
+                </polygon>
+
+                <text x="28" y="160">a</text>
+                <text x="185" y="275">b</text>
+                <text x="185" y="145">c</text>
+
+            </svg>
+
+        </div>
+
+
+        <div class="controls">
+
+            <div class="slider">
+
+                <div class="slider-head">
+                    <span>SIDE A</span>
+                    <strong id="aValue">3</strong>
+                </div>
+
+                <input
+                    id="aSlider"
+                    type="range"
+                    min="1"
+                    max="10"
+                    value="3">
+
+            </div>
+
+
+            <div class="slider">
+
+                <div class="slider-head">
+                    <span>SIDE B</span>
+                    <strong id="bValue">4</strong>
+                </div>
+
+                <input
+                    id="bSlider"
+                    type="range"
+                    min="1"
+                    max="10"
+                    value="4">
+
+            </div>
+
+
+            <div class="answer">
+
+                <span>THE HYPOTENUSE</span>
+
+                <strong id="cValue">5.00</strong>
+
+                <small>a² + b² = c²</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="music" id="music">
+
+    <div>
+
+        <p class="eyebrow">NUMBERS HAVE A SOUND</p>
+
+        <h2>
+            What if<br>
+            <i>mathematics</i><br>
+            could sing?
+        </h2>
+
+        <p>
+            Pythagorean tradition connected simple numerical
+            ratios with musical harmony.
+        </p>
+
+    </div>
+
+
+    <div class="sound-buttons">
+
+        <button onclick="playSound(1)">
+            <span>1 : 2</span>
+            <b>OCTAVE</b>
+            <small>▶</small>
+        </button>
+
+        <button onclick="playSound(1.5)">
+            <span>2 : 3</span>
+            <b>FIFTH</b>
+            <small>▶</small>
+        </button>
+
+        <button onclick="playSound(1.333)">
+            <span>3 : 4</span>
+            <b>FOURTH</b>
+            <small>▶</small>
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="school">
+
+    <div class="school-photo"></div>
+
+    <div class="school-content">
+
+        <p class="eyebrow">THE PYTHAGOREAN SCHOOL</p>
+
+        <h2>
+            A community<br>
+            built around <i>ideas.</i>
+        </h2>
+
+        <p>
+            The Pythagorean community was associated with a way
+            of life combining mathematical study, philosophical
+            thought, music and ideas about the cosmos.
+        </p>
+
+        <div class="ideas">
+
+            <div>
+                <span>01</span>
+                MATHEMATICS
+            </div>
+
+            <div>
+                <span>02</span>
+                MUSIC
+            </div>
+
+            <div>
+                <span>03</span>
+                ASTRONOMY
+            </div>
+
+            <div>
+                <span>04</span>
+                PHILOSOPHY
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="facts">
+
+    <div class="section-title">
+
+        <p class="eyebrow">QUICK FACTS</p>
+
+        <h2>Did you know?</h2>
+
+    </div>
+
+
+    <div class="fact-grid">
+
+        <div class="fact">
+            <span>01</span>
+            <p>
+                Pythagoras is traditionally associated with
+                Samos in the Aegean.
+            </p>
+        </div>
+
+        <div class="fact">
+            <span>02</span>
+            <p>
+                His name became permanently linked to the
+                famous right-triangle theorem.
+            </p>
+        </div>
+
+        <div class="fact">
+            <span>03</span>
+            <p>
+                Mathematical ratios were connected with
+                musical harmony in Pythagorean thought.
+            </p>
+        </div>
+
+        <div class="fact">
+            <span>04</span>
+            <p>
+                Much of what we know about Pythagoras comes
+                from later sources, so some details remain uncertain.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="challenge" id="challenge">
+
+    <div class="challenge-box">
+
+        <p class="eyebrow">YOUR TURN</p>
+
+        <h2>
+            Can you<br>
+            <i>solve it?</i>
+        </h2>
+
+        <p>
+            A right triangle has sides of 6 and 8.
+            What is the length of the hypotenuse?
+        </p>
+
+
+        <div class="answers">
+
+            <button onclick="checkAnswer(8)">8</button>
+            <button onclick="checkAnswer(10)">10</button>
+            <button onclick="checkAnswer(12)">12</button>
+            <button onclick="checkAnswer(14)">14</button>
+
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-title">
+        PYTHAGORAS
+    </div>
+
+    <p>THE WORLD IN NUMBERS</p>
+
+    <div class="footer-line"></div>
+
+    <small>
+        Mathematics · Music · Philosophy · 2026
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
